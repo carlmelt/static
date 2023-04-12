@@ -1,3 +1,3 @@
 <?php
-header('Location: http://127.0.0.1/');
+header('Location: https://google.com/');
 ?>
